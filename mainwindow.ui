@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCustomPlot" name="widgetGraph" native="true">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>150</y>
+      <width>501</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonQuadratic">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>86</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>quadratic</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroupRadio</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonCubic">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>86</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>qubic</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroupRadio</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButtonPlot">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroupRadio"/>
+ </buttongroups>
+</ui>
